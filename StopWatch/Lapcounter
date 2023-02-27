@@ -1,29 +1,4 @@
-OS Lab
-BCS 4G
-Quiz 1 (23-2-2023)
-Assignment details
-Quiz 1 (23-2-2023)
-Muhammad Irtaza MSCS 2021
-•
-Feb 23
-10 points
-Due Feb 23, 3:30 PM
-Upload .c file and do not zip the file.
 
-File must contain quiz number and your roll number.
-e.g. quiz1_20L_1224.c
-
-(Any submission which doesn't follow these rules will be marked zero with any exception).
-
-Quiz 1 (4 BCS).pdf
-PDF
-Class comments
-Your work
-Turned in late
-
-1868.c
-Text
-Private comments
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
@@ -59,5 +34,3 @@ printf("ROll Number,Name and Process ID are : %d , %s, %d \n",1868,"Sami Khokher
 }
 }
 }
-1868.c
-Displaying 1868.c.
