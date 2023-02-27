@@ -1,0 +1,63 @@
+OS Lab
+BCS 4G
+Quiz 1 (23-2-2023)
+Assignment details
+Quiz 1 (23-2-2023)
+Muhammad Irtaza MSCS 2021
+•
+Feb 23
+10 points
+Due Feb 23, 3:30 PM
+Upload .c file and do not zip the file.
+
+File must contain quiz number and your roll number.
+e.g. quiz1_20L_1224.c
+
+(Any submission which doesn't follow these rules will be marked zero with any exception).
+
+Quiz 1 (4 BCS).pdf
+PDF
+Class comments
+Your work
+Turned in late
+
+1868.c
+Text
+Private comments
+#include<stdio.h>
+#include<stdlib.h>
+#include<unistd.h>
+#include<sys/wait.h>
+#include<sys/types.h>
+int main(int argc,char*argv[]){
+int size=atoi(argv[1]);
+int seconds=atoi(argv[2]);
+int total_time=size*seconds;
+printf("Total laps and time is : %d , %d \n",size,seconds);
+int i=0;
+pid_t p=fork();
+sleep(seconds);
+if(p==0){
+for(i=0;i<size;i++){
+if(p==0){
+printf("Process number is : %d \n",i+1);
+printf("Process id is : %d \n",getpid());
+sleep(seconds);
+p=fork();
+}
+else{
+wait(NULL);
+}
+}
+}
+else{
+wait(NULL);
+printf("Total time taken is : %d \n",total_time);
+pid_t q=fork();
+if(q){
+printf("ROll Number,Name and Process ID are : %d , %s, %d \n",1868,"Sami Khokher",getpid());
+}
+}
+}
+1868.c
+Displaying 1868.c.
