@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main(int argc,char*argv[]){
+int size=strlen(argv[1]);
+char comm[size];
+strcpy(comm,argv[1]);
+printf("%s",comm);
+return 0;
+}
