@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<sys/stat.h>
+int main(int argc,char*argv[]){
+//int size=strlen(argv[1]);
+//char comm[size];
+//char mk_dir[]="mkdir";
+//int game;
+//strcpy(comm,argv[1]);
+//if(strcmp(mk_dir,comm)==0)
+//game=mkdir("g1", 0735);
+//printf("naa");
+char str[100];
+ //  int i;
+
+   printf( "Enter a value :");
+   scanf("%s ", str);
+   //printf( "\nYou entered: %s ", str);
+
+ //char str[80] = str1;
+   //const char s[2] = ", ";
+   char *token;
+
+   /* get the first token */
+   token = strtok(str,",");
+
+   /* walk through other tokens */
+   while( token != NULL ) {
+      printf( " %s \n", token );
+      token = strtok(NULL,",");
+   }
+
+return 0;
+}
